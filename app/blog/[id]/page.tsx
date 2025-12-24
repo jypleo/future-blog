@@ -28,7 +28,7 @@ export default async function PostPage(props: { params: Promise<{ id: string }> 
           {post.title}
         </h1>
         <div className="text-sm text-muted-foreground mb-8">
-           Published {formatDistanceToNow(new Date(post.created_at), { addSuffix: true })}
+          Published {formatDistanceToNow(new Date(post.created_at), { addSuffix: true })}
         </div>
         <div className="whitespace-pre-wrap leading-7">
           {post.content}
